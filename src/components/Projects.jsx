@@ -41,7 +41,7 @@ export const Projects = () => {
       imgUrl: projImg5,
 
     },
-    
+
   ];
 
   return (
@@ -51,38 +51,39 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-              <br></br>               
-              <br></br>
-              <br></br>
-                <center><h2>Proyectos</h2>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                      {
-                          team.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                         
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container></center>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <center>
+                    <h2>Proyectos</h2>
+                    <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                      <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      </Nav>
+                      <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                        <Tab.Pane eventKey="first">
+                          <Row>
+                            {
+                              team.map((project, index) => {
+                                return (
+                                  <ProjectCard
+                                    key={index}
+                                    {...project}
+                                  />
+                                )
+                              })
+                            }
+
+                          </Row>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </Tab.Container></center>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
-        </Container>
+      </Container>
       <img className="background-image-right" src={colorSharp2}></img>
-      </section>
+    </section>
   )
 }

@@ -34,6 +34,7 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+  font-size: 45px;
 }
 
 p,
@@ -392,6 +393,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
+.team h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -464,12 +471,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0 55px 55px 0;
 }
 
+
 .proj-imgbx {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 30%;
+  border-radius: 0%;
+  margin-bottom: 27px;
+  overflow: hidden;
+  left: 15%;
+  
+}
+
+.proj-imgbx1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20%;
   margin-bottom: 27px;
   overflow: hidden;
   
@@ -490,6 +510,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 
+.proj-imgbx1::before {
+  content: "";
+  opacity: 0.85;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+
+}
+
+.proj-imgbx1:hover::before {
+  height: 100%;
+}
+
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -501,7 +536,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+
 .proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-imgbx1:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
