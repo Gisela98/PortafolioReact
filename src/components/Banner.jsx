@@ -5,7 +5,7 @@ import headerImg from "../img/espacio.svg";
 import { ArrowRightCircle, Quote } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import pdf from '../CurriculumHDV.pdf';
+import pdf from '../Curriculum.pdf';
 
 
 
