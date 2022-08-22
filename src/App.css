@@ -61,13 +61,6 @@ select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
-}
-
 p.success {
   color: green;
 }
@@ -382,8 +375,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .project {
   padding: 30px 0;
-  position: relative;
-  left: 3%;
 }
 
 .project h2 {
@@ -403,7 +394,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills {
-  width: 72%;
+  width: 100%;
   margin: 0 auto;
   border-radius: 50px;
   overflow: hidden;
@@ -650,4 +641,25 @@ h4 {
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
+}
+
+@media (min-width:1700px) {
+  main .container {
+      max-width: 100%;
+      padding: 0 150px;
+  }
+}
+
+@media (max-width:900px) {
+  main .container {
+      max-width: 80%;
+      padding: 0 150px;
+  }
+}
+
+@media (min-width:900px) {
+  .project .nav.nav-pills {
+      min-width: 100%;
+
+  }
 }
