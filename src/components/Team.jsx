@@ -3,7 +3,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import colorSharp2 from "../img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { TeamCard } from './teamCard';
+import { TeamCard } from './TeamCard';
 import projImg1 from '../img/js.svg'
 import projImg2 from '../img/html.png'
 import projImg3 from '../img/css.png'
