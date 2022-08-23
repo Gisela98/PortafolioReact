@@ -22,7 +22,6 @@ body {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 h1,
@@ -480,14 +479,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 0%;
   margin-bottom: 27px;
   overflow: hidden;
-  left: 15%;
+  left: 20%;
   
 }
 
 .proj-imgbx1 {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 20%;
   margin-bottom: 27px;
@@ -710,6 +709,22 @@ h4 {
 @media (min-width:900px) {
   .project .nav.nav-pills {
       min-width: 100%;
+
+  }
+}
+
+@media (max-width:989px) {
+  .proj-imgbx1 {
+      max-width: 110%;
+      max-height: 70%;
+
+  }
+}
+
+@media (max-width:565px) {
+  .proj-imgbx1 {
+      max-width: 110%;
+      max-height: 80%;
 
   }
 }

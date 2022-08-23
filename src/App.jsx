@@ -15,8 +15,8 @@ function App() {
       <NavBar />
       <Banner />
       <Team />
-      <Footer />
       <Projects />
+      <Footer />
       
     </div>
 
