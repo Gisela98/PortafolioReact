@@ -64,7 +64,7 @@ export const Banner = () => {
                   <span className="tagline">{date}</span>
                   <h1>Hi! I'm Gisella
                     De Los Rios </h1>
-                  <h4>Desarrollador web ful stack.</h4>
+                  <h4>Desarrollador web full stack.</h4>
                   <br></br>
                   <i><q>Desarrollador web full stack en formacion con habilidades de crear aplicaciones web reales usando tecnologías de backend y frontend. Mi perfil esta orientado a un constante aprendizaje, motivada por la tecnología, el desarrollo y los videojuegos, con muchas ganas de obtener conocimientos cada día y buscando oportunidades en empresas que me ayuden a crecer profesionalmente.</q></i>
                   <a href= {pdf} class="btn-link" download>Descargar curriculum</a>
